@@ -33,8 +33,24 @@
     display: flex; align-items: center; justify-content: space-between;
     height: 64px;
   }
-  .nav-logo { display: flex; align-items: center; gap: 0; text-decoration: none; }
-  .nav-logo img { height: 56px; width: auto; object-fit: contain; }
+  .nav-logo img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+  /* Chip branco arredondado atrás da logo para dar contraste no header vermelho */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    text-decoration: none;
+    background: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    line-height: 0;
+  }
   .nav-links { display: flex; gap: .2rem; list-style: none; }
   .nav-links a {
     color: rgba(255,255,255,.85); text-decoration: none; font-size: .85rem; font-weight: 600;
